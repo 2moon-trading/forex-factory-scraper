@@ -132,10 +132,9 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
                 event_dt = event_dt.replace(hour=hh, minute=mm, second=0)
 
         if time_text != "All Day" and time_text != "":
-            time_text = datetime.strptime(time_text, "%I:%M%p").strftime("%H:%M")
+            time_text = datetime.strptime(time_text, "%I:%M%p").strftime("%H:%M:%S")
 
         _the_date = str(the_date.strftime('%Y-%m-%d'))
-
 
         event_text = event_text.replace("\n", " ").strip().replace("\\", "")
 
@@ -151,6 +150,34 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
         if len(date_text.split(' ')) > 2:
             date_text = datetime.strptime(date_text, "%Y %a %b %d")
             date_text = date_text.strftime("%Y-%m-%d")
+
+        if actual_text == "":
+            actual_text = None
+        else:
+            actual_text = float(actual_text.replace("%", "").replace("K", "").strip())
+
+        if forecast_text == "":
+            forecast_text = None
+        else:
+            forecast_text = float(forecast_text.replace("%", "").replace("K", "").strip())
+
+        if previous_text == "":
+            previous_text = None
+        else:
+            previous_text = float(previous_text.replace("%", "").replace("K", "").strip())
+
+        if impact_text == "Non-Economic" or impact_text == "" or impact_text is None:
+            impact_text = None
+        elif 'Low' in impact_text:
+            impact_text = "Low"
+        elif 'Medium' in impact_text:
+            impact_text = "Medium"
+        elif 'High' in impact_text:
+            impact_text = "High"
+        elif 'Very High' in impact_text:
+            impact_text = "Very High"
+        else:
+            impact_text = "Unknown"
 
         data_list.append({
             "Week": _the_date,
