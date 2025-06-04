@@ -1,17 +1,12 @@
-# src/forexfactory/main.py
-
-import sys
-import os
 import logging
-import argparse
 from datetime import datetime
-from dateutil.tz import gettz
+from dateutil.tz import gettz # type: ignore
 
 from src.incremental import scrape_incremental
 
 
 start = '2023-01-01'
-cycles = 6
+cycles = 1
 timezone = 'Asia/Tehran'
 
 
@@ -28,5 +23,4 @@ def main():
 
     scrape_incremental(from_date, cycles, tzname=timezone)
 
-if __name__ == "__main__":
-    main()
+main()

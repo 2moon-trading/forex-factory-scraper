@@ -1,23 +1,15 @@
-# src/forexfactory/scraper.py
-
-import time
+import datetime
 import re
 import logging
-import pandas as pd
-from datetime import datetime, timedelta
-from dateutil.tz import gettz
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import (
+import pandas as pd # type: ignore
+from selenium.webdriver.common.by import By # type: ignore
+from selenium.webdriver.support.ui import WebDriverWait # type: ignore
+from selenium.webdriver.support import expected_conditions as EC # type: ignore
+from selenium.common.exceptions import ( # type: ignore
     NoSuchElementException,
     TimeoutException,
-    ElementClickInterceptedException,
-    StaleElementReferenceException
 )
-import undetected_chromedriver as uc
-
-from .detail_parser import parse_detail_table, detail_data_to_string
+import undetected_chromedriver as uc # type: ignore
 
 logging.basicConfig(
     level=logging.INFO,
@@ -25,6 +17,10 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger(__name__)
+
+COLUMNS = [
+    "DateTime", "Currency", "Impact", "Event", "Actual", "Forecast", "Previous", "Detail"
+]
 
 
 def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
@@ -54,6 +50,8 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
     data_list = []
     current_day = the_date
 
+    logger.info(f"Found {len(rows)} rows for {current_day.date()}")
+
     for row in rows:
         row_class = row.get_attribute("class")
         if "day-breaker" in row_class or "no-event" in row_class:
@@ -62,30 +60,51 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
         # Parse the basic cells
         try:
             time_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__time")]')
-            currency_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__currency")]')
-            impact_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__impact")]')
-            event_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__event")]')
-            actual_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__actual")]')
-            forecast_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__forecast")]')
-            previous_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__previous")]')
+            time_text = time_el.text.strip()
         except NoSuchElementException:
-            continue
+            time_text = ""
 
-        time_text = time_el.text.strip()
-        currency_text = currency_el.text.strip()
+        try:
+            currency_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__currency")]')
+            currency_text = currency_el.text.strip()
+        except NoSuchElementException:
+            currency_text = ""
 
-        # Get impact text
         impact_text = ""
         try:
-            impact_span = impact_el.find_element(By.XPATH, './/span')
-            impact_text = impact_span.get_attribute("title") or ""
-        except Exception:
-            impact_text = impact_el.text.strip()
+            impact_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__impact")]')
+            impact_text = ""
+            try:
+                impact_span = impact_el.find_element(By.XPATH, './/span')
+                impact_text = impact_span.get_attribute("title") or ""
+            except Exception:
+                impact_text = impact_el.text.strip()
+        except NoSuchElementException:
+            pass
 
-        event_text = event_el.text.strip()
-        actual_text = actual_el.text.strip()
-        forecast_text = forecast_el.text.strip()
-        previous_text = previous_el.text.strip()
+        try:
+            event_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__event")]')
+            event_text = event_el.text.strip()
+        except NoSuchElementException:
+            event_text = ""
+
+        try:
+            actual_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__actual")]')
+            actual_text = actual_el.text.strip()
+        except NoSuchElementException:
+            actual_text = ""
+
+        try:
+            forecast_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__forecast")]')
+            forecast_text = forecast_el.text.strip()
+        except NoSuchElementException:
+            forecast_text = ""
+
+        try:
+            previous_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__previous")]')
+            previous_text = previous_el.text.strip()
+        except NoSuchElementException:
+            previous_text = ""
 
         # Determine event time based on text
         event_dt = current_day
@@ -131,18 +150,23 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
     driver = uc.Chrome()
     driver.set_window_size(1400, 1000)
 
-    logger.info(f"Scraping from {from_date.date()} for {cycles} cycles.")
+    logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
 
     _cycles = 0
 
-    df = pd.DataFrame()
+    df = pd.DataFrame(columns=COLUMNS)
 
     try:
         current_week = from_date
-        while _cycles <= cycles:
+        while _cycles < cycles:
             logger.info(f"Scraping week {current_week.strftime('%Y-%m-%d')}...")
-            df += scrape_week(driver, current_week)
+            df = pd.concat([df, scrape_week(driver, current_week)], ignore_index=True)
+            current_week += datetime.timedelta(days=7)
             _cycles += 1
+
+        json_str = df.to_json(orient='records', indent=2)
+        with open("noticias.json", "w", encoding="utf-8") as f:
+            f.write(json_str)
 
     finally:
         if driver:
