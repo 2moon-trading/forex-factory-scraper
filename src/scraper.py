@@ -24,7 +24,7 @@ COLUMNS = [
 ]
 
 
-def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
+def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
     """
     Scrape data for a single day (the_date) and return a DataFrame with columns:
     -DateTime, Currency, Impact, Event, Actual, Forecast, Previous, Detail
@@ -58,6 +58,12 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
             continue
 
         # Parse the basic cells
+        try:
+            date_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__date")]')
+            date_text = date_el.text.strip()
+        except NoSuchElementException:
+            date_text = ""
+
         try:
             time_el = row.find_element(By.XPATH, './/td[contains(@class,"calendar__time")]')
             time_text = time_el.text.strip()
@@ -128,9 +134,21 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
         if time_text != "All Day" and time_text != "":
             time_text = datetime.strptime(time_text, "%I:%M%p").strftime("%H:%M")
 
+        _the_date = str(the_date.strftime('%Y-%m-%d'))
+
+
+        event_text = event_text.replace("\n", " ").strip().replace("\\", "")
+
+        date_text = date_text.replace("\n", " ").strip().replace("\\", "")
+
+        # date_text = date_text.replace("\n", " ").strip().replace("\\", "") + " " + _the_date.split("-")[0]
+
+        if date_text == '':
+            date_text = next(data['Date'] for data in reversed(data_list) if data['Date'] != '')
+
         data_list.append({
-            "Week": the_date.strftime('%Y-%m-%d'),
-            "Date": current_day.isoformat(),
+            "Week": _the_date,
+            "Date": date_text,
             "Time": time_text,
             "Currency": currency_text,
             "Impact": impact_text,

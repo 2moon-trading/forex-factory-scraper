@@ -1,7 +1,7 @@
 [
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Sun Jan 1",
     "Time":"All Day",
     "Currency":"NZD",
     "Impact":"Non-Economic",
@@ -12,7 +12,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Sun Jan 1",
     "Time":"All Day",
     "Currency":"AUD",
     "Impact":"Non-Economic",
@@ -23,7 +23,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Sun Jan 1",
     "Time":"All Day",
     "Currency":"JPY",
     "Impact":"Non-Economic",
@@ -34,7 +34,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Sun Jan 1",
     "Time":"All Day",
     "Currency":"CNY",
     "Impact":"Non-Economic",
@@ -45,7 +45,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"CHF",
     "Impact":"Non-Economic",
@@ -56,7 +56,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"GBP",
     "Impact":"Non-Economic",
@@ -67,7 +67,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"03:15",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -78,7 +78,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"03:45",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -89,7 +89,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"03:50",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -100,7 +100,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"03:55",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -111,7 +111,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"04:00",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -122,7 +122,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"CAD",
     "Impact":"Non-Economic",
@@ -133,7 +133,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"USD",
     "Impact":"Non-Economic",
@@ -144,7 +144,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"NZD",
     "Impact":"Non-Economic",
@@ -155,7 +155,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"All Day",
     "Currency":"JPY",
     "Impact":"Non-Economic",
@@ -166,7 +166,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Mon Jan 2",
     "Time":"20:45",
     "Currency":"CNY",
     "Impact":"Low Impact Expected",
@@ -177,7 +177,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"00:30",
     "Currency":"AUD",
     "Impact":"Low Impact Expected",
@@ -188,7 +188,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"All Day",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -199,7 +199,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"03:00",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -210,7 +210,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"03:30",
     "Currency":"CHF",
     "Impact":"Low Impact Expected",
@@ -221,7 +221,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"03:55",
     "Currency":"EUR",
     "Impact":"Low Impact Expected",
@@ -232,7 +232,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"04:30",
     "Currency":"GBP",
     "Impact":"Low Impact Expected",
@@ -243,7 +243,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"09:30",
     "Currency":"CAD",
     "Impact":"Low Impact Expected",
@@ -254,7 +254,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"09:39",
     "Currency":"NZD",
     "Impact":"Low Impact Expected",
@@ -265,7 +265,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"09:45",
     "Currency":"USD",
     "Impact":"Low Impact Expected",
@@ -276,7 +276,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"10:00",
     "Currency":"USD",
     "Impact":"Low Impact Expected",
@@ -287,7 +287,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"19:01",
     "Currency":"GBP",
     "Impact":"Low Impact Expected",
@@ -298,7 +298,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Tue Jan 3",
     "Time":"19:30",
     "Currency":"JPY",
     "Impact":"Low Impact Expected",
@@ -309,7 +309,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -320,7 +320,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -331,7 +331,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -342,7 +342,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -353,7 +353,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -364,7 +364,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -375,7 +375,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -386,7 +386,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -397,7 +397,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -408,7 +408,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -419,7 +419,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -430,7 +430,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -441,7 +441,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -452,7 +452,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -463,7 +463,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -474,7 +474,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -485,7 +485,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -496,7 +496,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -507,7 +507,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -518,7 +518,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Wed Jan 4",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -529,7 +529,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -540,7 +540,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -551,7 +551,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -562,7 +562,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -573,7 +573,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -584,7 +584,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -595,7 +595,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -606,7 +606,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -617,7 +617,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -628,7 +628,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -639,7 +639,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -650,7 +650,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -661,7 +661,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -672,7 +672,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -683,7 +683,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Thu Jan 5",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -694,7 +694,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -705,7 +705,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -716,7 +716,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -727,7 +727,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -738,7 +738,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -749,7 +749,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -760,7 +760,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -771,7 +771,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -782,7 +782,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -793,7 +793,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -804,7 +804,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -815,7 +815,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -826,7 +826,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -837,7 +837,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -848,7 +848,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -859,7 +859,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -870,7 +870,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -881,7 +881,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -892,7 +892,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Fri Jan 6",
     "Time":"",
     "Currency":"",
     "Impact":"",
@@ -903,7 +903,7 @@
   },
   {
     "Week":"2023-01-01",
-    "Date":"2023-01-01T00:00:00+03:30",
+    "Date":"Sat Jan 7",
     "Time":"",
     "Currency":"",
     "Impact":"",
