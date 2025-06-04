@@ -141,14 +141,20 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
 
         date_text = date_text.replace("\n", " ").strip().replace("\\", "")
 
-        # date_text = date_text.replace("\n", " ").strip().replace("\\", "") + " " + _the_date.split("-")[0]
-
         if date_text == '':
             date_text = next(data['Date'] for data in reversed(data_list) if data['Date'] != '')
 
+        year = _the_date.split("-")[0]
+        if year not in date_text:
+            date_text = f"{year} {date_text}"
+
+        if len(date_text.split(' ')) > 2:
+            date_text = datetime.strptime(date_text, "%Y %a %b %d")
+            date_text = date_text.strftime("%Y-%m-%d")
+
         data_list.append({
             "Week": _the_date,
-            "Date": date_text,
+            "Date": date_text ,
             "Time": time_text,
             "Currency": currency_text,
             "Impact": impact_text,
