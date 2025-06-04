@@ -1,4 +1,5 @@
-import datetime
+import datetime as dt
+from datetime import datetime
 import re
 import logging
 import pandas as pd # type: ignore
@@ -19,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 COLUMNS = [
-    "DateTime", "Currency", "Impact", "Event", "Actual", "Forecast", "Previous", "Detail"
+    "Week", "Date", "Time", "Currency", "Impact", "Event", "Actual", "Forecast", "Previous"
 ]
 
 
@@ -43,8 +44,7 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
         )
     except TimeoutException:
         logger.warning(f"Page did not load for day={the_date.date()}")
-        return pd.DataFrame(
-            columns=["DateTime", "Currency", "Impact", "Event", "Actual", "Forecast", "Previous", "Detail"])
+        return pd.DataFrame(columns=COLUMNS)
 
     rows = driver.find_elements(By.XPATH, '//tr[contains(@class,"calendar__row")]')
     data_list = []
@@ -125,8 +125,13 @@ def parse_calendar_week(driver, the_date: datetime) -> pd.DataFrame:
                     hh = 0
                 event_dt = event_dt.replace(hour=hh, minute=mm, second=0)
 
+        if time_text != "All Day" and time_text != "":
+            time_text = datetime.strptime(time_text, "%I:%M%p").strftime("%H:%M")
+
         data_list.append({
-            "DateTime": event_dt.isoformat(),
+            "Week": the_date.strftime('%Y-%m-%d'),
+            "Date": current_day.isoformat(),
+            "Time": time_text,
             "Currency": currency_text,
             "Impact": impact_text,
             "Event": event_text,
@@ -161,7 +166,7 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
         while _cycles < cycles:
             logger.info(f"Scraping week {current_week.strftime('%Y-%m-%d')}...")
             df = pd.concat([df, scrape_week(driver, current_week)], ignore_index=True)
-            current_week += datetime.timedelta(days=7)
+            current_week += dt.timedelta(days=7)
             _cycles += 1
 
         json_str = df.to_json(orient='records', indent=2)
