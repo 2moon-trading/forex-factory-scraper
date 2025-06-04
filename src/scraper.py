@@ -154,17 +154,20 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
         if actual_text == "":
             actual_text = None
         else:
-            actual_text = float(actual_text.replace("%", "").replace("K", "").strip())
+            actual_text = actual_text if '|' not in actual_text else actual_text.split('|')[0]
+            actual_text = float(actual_text.replace("%", "").replace("K", "").replace("M", "").replace("B", "").replace("T", "").strip())
 
         if forecast_text == "":
             forecast_text = None
         else:
-            forecast_text = float(forecast_text.replace("%", "").replace("K", "").strip())
+            forecast_text = forecast_text if '|' not in forecast_text else forecast_text.split('|')[0]
+            forecast_text = float(forecast_text.replace("%", "").replace("K", "").replace("M", "").replace("B", "").replace("T", "").strip())
 
         if previous_text == "":
             previous_text = None
         else:
-            previous_text = float(previous_text.replace("%", "").replace("K", "").strip())
+            previous_text = previous_text if '|' not in previous_text else previous_text.split('|')[0]
+            previous_text = float(previous_text.replace("%", "").replace("K", "").replace("M", "").replace("B", "").replace("T", "").strip())
 
         if impact_text == "Non-Economic" or impact_text == "" or impact_text is None:
             impact_text = None
