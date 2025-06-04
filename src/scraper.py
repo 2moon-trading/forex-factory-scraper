@@ -136,9 +136,9 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
 
         _the_date = str(the_date.strftime('%Y-%m-%d'))
 
-        event_text = event_text.replace("\n", " ").strip().replace("\\", "")
+        event_text = event_text.replace("\n", " ").replace("\\/", "/").replace("mm", "m/m").replace("qq", "q/q").replace("yy", "y/y").strip()
 
-        date_text = date_text.replace("\n", " ").strip().replace("\\", "")
+        date_text = date_text.replace("\n", " ").replace("\\", "").strip()
 
         if date_text == '':
             date_text = next(data['Date'] for data in reversed(data_list) if data['Date'] != '')
