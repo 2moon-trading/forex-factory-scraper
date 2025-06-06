@@ -238,11 +238,17 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     json_filename = "noticias.json"
 
-    # Paso 1: cargar noticias existentes
-    if os.path.exists(json_filename):
-        with open(json_filename, "r", encoding="utf-8") as f:
-            noticias_previas = json.load(f)
+    # Paso 1: cargar JSON existente con verificación robusta
+    if os.path.exists(json_filename) and os.path.getsize(json_filename) > 0:
+        try:
+            with open(json_filename, "r", encoding="utf-8") as f:
+                noticias_previas = json.load(f)
+            logger.info(f"Cargadas {len(noticias_previas)} noticias previas.")
+        except json.JSONDecodeError:
+            logger.warning(f"{json_filename} está malformado o vacío. Inicializando desde cero.")
+            noticias_previas = []
     else:
+        logger.info(f"{json_filename} no existe o está vacío. Inicializando desde cero.")
         noticias_previas = []
 
     # Paso 2: función para limpiar NaN de forma profunda
