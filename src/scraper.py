@@ -241,7 +241,7 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
     # Paso 1: calcular las semanas que no han sido guardadas
     for _ in range(cycles):
         week_str = current_week.strftime('%Y_%m_%d')
-        marker_file = f"noticias_{week_str}.ok"
+        marker_file = f".cache/noticias_{week_str}.ok"
 
         if not os.path.exists(marker_file):
             semanas_a_scrapear.append(current_week)
