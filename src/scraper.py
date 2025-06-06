@@ -238,31 +238,19 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     json_filename = "noticias.json"
 
-    # Paso 1: cargar JSON existente con verificación robusta
+    # Paso 1: cargar JSON existente como DataFrame (más robusto para duplicados)
     if os.path.exists(json_filename) and os.path.getsize(json_filename) > 0:
         try:
-            with open(json_filename, "r", encoding="utf-8") as f:
-                noticias_previas = json.load(f)
-            logger.info(f"Cargadas {len(noticias_previas)} noticias previas.")
-        except json.JSONDecodeError:
-            logger.warning(f"{json_filename} está malformado o vacío. Inicializando desde cero.")
-            noticias_previas = []
+            df_total = pd.read_json(json_filename)
+            logger.info(f"Cargadas {len(df_total)} noticias previas.")
+        except ValueError:
+            logger.warning(f"{json_filename} está malformado. Inicializando desde cero.")
+            df_total = pd.DataFrame()
     else:
         logger.info(f"{json_filename} no existe o está vacío. Inicializando desde cero.")
-        noticias_previas = []
+        df_total = pd.DataFrame()
 
-    # Paso 2: función para limpiar NaN de forma profunda
-    def clean_nan_deep(data):
-        if isinstance(data, list):
-            return [clean_nan_deep(item) for item in data]
-        elif isinstance(data, dict):
-            return {k: clean_nan_deep(v) for k, v in data.items()}
-        elif pd.isna(data):
-            return None
-        else:
-            return data
-
-    # Paso 3: identificar semanas nuevas
+    # Paso 2: identificar semanas nuevas
     semanas_nuevas = []
     current_week = from_date
 
@@ -275,27 +263,27 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
         current_week += dt.timedelta(days=7)
 
-    # Paso 4: scrapear semanas nuevas
+    # Paso 3: scrapear semanas nuevas
     if semanas_nuevas:
         for week in semanas_nuevas:
             week_str = week.strftime('%Y_%m_%d')
             logger.info(f"Scraping week {week.strftime('%Y-%m-%d')}...")
 
             week_df = scrape_week(driver, week)
-            records = week_df.to_dict(orient='records')
 
-            # ✅ Limpieza profunda de NaN
-            clean_records = clean_nan_deep(records)
+            # Limpieza profunda de NaN
+            week_df = week_df.where(pd.notnull(week_df), None)
 
-            noticias_previas.extend(clean_records)
+            df_total = pd.concat([df_total, week_df], ignore_index=True)
 
+            # Marcar semana como procesada
             with open(f".cache/noticias_{week_str}.ok", "w") as marker:
                 marker.write("")
 
-        # Paso 5: guardar todo el JSON limpio
-        with open(json_filename, "w", encoding="utf-8") as f:
-            json.dump(noticias_previas, f, indent=2, ensure_ascii=False)
+        # Paso 4: eliminar duplicados y guardar
+        df_total = df_total.drop_duplicates(subset=["timestamp", "title"])  # Ajusta columnas si es necesario
 
-        logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas.")
+        df_total.to_json(json_filename, orient="records", indent=2, force_ascii=False)
+        logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas. Total de noticias: {len(df_total)}")
     else:
         logger.info("No hay semanas nuevas por scrapear. El archivo no fue modificado.")
