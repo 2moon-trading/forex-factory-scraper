@@ -262,7 +262,7 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     for _ in range(cycles):
         week_str = current_week.strftime('%Y_%m_%d')
-        marker_file = f"noticias_{week_str}.ok"
+        marker_file = f".cache/noticias_{week_str}.ok"
 
         if not os.path.exists(marker_file):
             semanas_nuevas.append(current_week)
@@ -283,7 +283,7 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
             noticias_previas.extend(clean_records)
 
-            with open(f"noticias_{week_str}.ok", "w") as marker:
+            with open(f".cache/noticias_{week_str}.ok", "w") as marker:
                 marker.write("")
 
         # Paso 5: guardar todo el JSON limpio
