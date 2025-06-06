@@ -235,34 +235,42 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
 
+    semanas_a_scrapear = []
     current_week = from_date
 
-    with open("noticias.json", "w", encoding="utf-8") as f:
-        f.write("[")  # Abrir la lista JSON
+    # Paso 1: calcular las semanas que no han sido guardadas
+    for _ in range(cycles):
+        week_str = current_week.strftime('%Y_%m_%d')
+        marker_file = f"noticias_{week_str}.ok"
 
-        for i in range(cycles):
-            week_str = current_week.strftime('%Y_%m_%d')
-            marker_file = f".cache/noticias_{week_str}.ok"
+        if not os.path.exists(marker_file):
+            semanas_a_scrapear.append(current_week)
 
-            if os.path.exists(marker_file):
-                logger.info(f"Ya existe {marker_file}, saltando semana {week_str}...")
-            else:
-                logger.info(f"Scraping week {current_week.strftime('%Y-%m-%d')}...")
-                week_df = scrape_week(driver, current_week)
+        current_week += dt.timedelta(days=7)
 
-                # Convertir a JSON sin los corchetes externos
-                json_str = week_df.to_json(orient='records')[1:-1]
+    # Paso 2: si hay semanas nuevas, abrir y escribir el archivo
+    if semanas_a_scrapear:
+        with open("noticias.json", "w", encoding="utf-8") as f:
+            f.write("[")
 
-                # Si no es la primera semana que se escribe, agregar coma
-                if f.tell() > 1:
+            for idx, week in enumerate(semanas_a_scrapear):
+                week_str = week.strftime('%Y_%m_%d')
+                logger.info(f"Scraping week {week.strftime('%Y-%m-%d')}...")
+                week_df = scrape_week(driver, week)
+
+                json_str = week_df.to_json(orient='records')[1:-1]  # quitar [ y ]
+
+                if idx > 0:
                     f.write(",")
 
                 f.write(json_str)
 
                 # Crear archivo marcador
-                with open(marker_file, "w") as marker:
+                with open(f".cache/noticias_{week_str}.ok", "w") as marker:
                     marker.write("")
 
-            current_week += dt.timedelta(days=7)
+            f.write("]")
 
-        f.write("]")  # Cerrar la lista JSON
+        logger.info("noticias.json actualizado con nuevas semanas.")
+    else:
+        logger.info("No hay semanas nuevas por scrapear. Archivo noticias.json no se modificó.")
