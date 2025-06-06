@@ -184,7 +184,7 @@ def parse_calendar_day(driver, week: dt.datetime, the_date: dt.datetime) -> pd.D
             impact_text = "Unknown"
 
         data_list.append({
-            "Week": _the_date,
+            "Week": week.strftime('%Y-%m-%d'),
             "Date": date_text ,
             "Time": time_text,
             "Currency": currency_text,
@@ -203,14 +203,15 @@ def scrape_week(driver, the_date: datetime) -> pd.DataFrame:
     Re-scrape a single day, using existing_df to check for already-saved details.
     """
     week_df = pd.DataFrame(columns=COLUMNS)
-    week = copy.deepcopy(the_date)
-    day = copy.deepcopy(the_date)
+    week = the_date
     _cycles = 0
     while _cycles < 7:
-        logger.info(f"Scraping day {day.strftime('%Y-%m-%d')}...")
-        df_day_new = parse_calendar_day(driver, week, day)
+        print(week)
+        print(the_date)
+        logger.info(f"Scraping day {the_date.strftime('%Y-%m-%d')}...")
+        df_day_new = parse_calendar_day(driver, week, the_date)
         week_df = pd.concat([week_df, df_day_new], ignore_index=True)
-        day += dt.timedelta(days=1)
+        the_date += dt.timedelta(days=1)
         _cycles += 1
     return week_df
 
