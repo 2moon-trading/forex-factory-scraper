@@ -279,9 +279,8 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
             # Marcar semana como procesada
             with open(f".cache/noticias_{week_str}.ok", "w") as marker:
                 marker.write("")
-
         # Paso 4: eliminar duplicados y guardar
-        df_total = df_total.drop_duplicates(subset=["timestamp", "title"])  # Ajusta columnas si es necesario
+        df_total = df_total.drop_duplicates(subset=["Date", "Time", "Currency", "Event"])
 
         df_total.to_json(json_filename, orient="records", indent=2, force_ascii=False)
         logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas. Total de noticias: {len(df_total)}")
