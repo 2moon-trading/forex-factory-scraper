@@ -1,6 +1,7 @@
 import copy
 import datetime as dt
 from datetime import datetime
+import json
 import os
 import re
 import logging
@@ -235,42 +236,46 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
 
-    semanas_a_scrapear = []
+    # Paso 1: Cargar contenido anterior si existe
+    json_filename = "noticias.json"
+    if os.path.exists(json_filename):
+        with open(json_filename, "r", encoding="utf-8") as f:
+            noticias_previas = json.load(f)
+    else:
+        noticias_previas = []
+
+    # Paso 2: Identificar semanas pendientes
+    semanas_nuevas = []
     current_week = from_date
 
-    # Paso 1: calcular las semanas que no han sido guardadas
     for _ in range(cycles):
         week_str = current_week.strftime('%Y_%m_%d')
         marker_file = f".cache/noticias_{week_str}.ok"
 
         if not os.path.exists(marker_file):
-            semanas_a_scrapear.append(current_week)
+            semanas_nuevas.append(current_week)
 
         current_week += dt.timedelta(days=7)
 
-    # Paso 2: si hay semanas nuevas, abrir y escribir el archivo
-    if semanas_a_scrapear:
-        with open("noticias.json", "w", encoding="utf-8") as f:
-            f.write("[")
+    # Paso 3: Scrapear y acumular solo si hay nuevas semanas
+    if semanas_nuevas:
+        for week in semanas_nuevas:
+            week_str = week.strftime('%Y_%m_%d')
+            logger.info(f"Scraping week {week.strftime('%Y-%m-%d')}...")
 
-            for idx, week in enumerate(semanas_a_scrapear):
-                week_str = week.strftime('%Y_%m_%d')
-                logger.info(f"Scraping week {week.strftime('%Y-%m-%d')}...")
-                week_df = scrape_week(driver, week)
+            week_df = scrape_week(driver, week)
+            records = week_df.to_dict(orient='records')
 
-                json_str = week_df.to_json(orient='records')[1:-1]  # quitar [ y ]
+            noticias_previas.extend(records)
 
-                if idx > 0:
-                    f.write(",")
+            # Crear marcador para evitar reprocesar esta semana
+            with open(f".cache/noticias_{week_str}.ok", "w") as marker:
+                marker.write("")
 
-                f.write(json_str)
+        # Paso 4: Guardar todo el contenido acumulado
+        with open(json_filename, "w", encoding="utf-8") as f:
+            json.dump(noticias_previas, f, indent=2, ensure_ascii=False)
 
-                # Crear archivo marcador
-                with open(f".cache/noticias_{week_str}.ok", "w") as marker:
-                    marker.write("")
-
-            f.write("]")
-
-        logger.info("noticias.json actualizado con nuevas semanas.")
+        logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas a {json_filename}.")
     else:
-        logger.info("No hay semanas nuevas por scrapear. Archivo noticias.json no se modificó.")
+        logger.info("No hay semanas nuevas por scrapear. El archivo no fue modificado.")
