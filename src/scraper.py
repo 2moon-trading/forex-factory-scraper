@@ -242,7 +242,7 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
         for i in range(cycles):
             week_str = current_week.strftime('%Y_%m_%d')
-            marker_file = f"noticias_{week_str}.ok"
+            marker_file = f".cache/noticias_{week_str}.ok"
 
             if os.path.exists(marker_file):
                 logger.info(f"Ya existe {marker_file}, saltando semana {week_str}...")
