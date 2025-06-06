@@ -44,7 +44,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"CHF",
@@ -55,7 +55,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"GBP",
@@ -66,7 +66,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"03:15:00",
     "Currency":"EUR",
@@ -77,7 +77,7 @@
     "Previous":45.7
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"03:45:00",
     "Currency":"EUR",
@@ -88,7 +88,7 @@
     "Previous":48.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"03:50:00",
     "Currency":"EUR",
@@ -99,7 +99,7 @@
     "Previous":48.9
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"03:55:00",
     "Currency":"EUR",
@@ -110,7 +110,7 @@
     "Previous":47.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"04:00:00",
     "Currency":"EUR",
@@ -121,7 +121,7 @@
     "Previous":47.8
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"CAD",
@@ -132,7 +132,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"USD",
@@ -143,7 +143,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"NZD",
@@ -154,7 +154,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"All Day",
     "Currency":"JPY",
@@ -165,7 +165,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-02",
     "Date":"2023-01-02",
     "Time":"20:45:00",
     "Currency":"CNY",
@@ -176,7 +176,7 @@
     "Previous":49.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"00:30:00",
     "Currency":"AUD",
@@ -187,7 +187,7 @@
     "Previous":19.6
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"All Day",
     "Currency":"EUR",
@@ -198,7 +198,7 @@
     "Previous":-0.5
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"03:00:00",
     "Currency":"EUR",
@@ -209,7 +209,7 @@
     "Previous":-33.5
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"03:30:00",
     "Currency":"CHF",
@@ -220,7 +220,7 @@
     "Previous":53.9
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"03:55:00",
     "Currency":"EUR",
@@ -231,7 +231,7 @@
     "Previous":15.0
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"04:30:00",
     "Currency":"GBP",
@@ -242,7 +242,7 @@
     "Previous":44.7
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"09:30:00",
     "Currency":"CAD",
@@ -253,7 +253,7 @@
     "Previous":49.6
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"09:39:00",
     "Currency":"NZD",
@@ -264,7 +264,7 @@
     "Previous":-3.8
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"09:45:00",
     "Currency":"USD",
@@ -275,7 +275,7 @@
     "Previous":46.2
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"10:00:00",
     "Currency":"USD",
@@ -286,7 +286,7 @@
     "Previous":-0.2
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"19:01:00",
     "Currency":"GBP",
@@ -297,7 +297,7 @@
     "Previous":7.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-03",
     "Date":"2023-01-03",
     "Time":"19:30:00",
     "Currency":"JPY",
@@ -308,606 +308,606 @@
     "Previous":48.8
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"02:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German Import Prices m\/m",
+    "Actual":-4.5,
+    "Forecast":-1.7,
+    "Previous":-1.2
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"02:30:00",
+    "Currency":"CHF",
+    "Impact":"High",
+    "Event":"CPI m\/m",
+    "Actual":-0.2,
+    "Forecast":-0.1,
+    "Previous":0.0
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"02:45:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"French Prelim CPI m\/m",
+    "Actual":-0.1,
+    "Forecast":0.5,
+    "Previous":0.3
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"03:15:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Spanish Services PMI",
+    "Actual":51.6,
+    "Forecast":50.8,
+    "Previous":51.2
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"03:45:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Italian Services PMI",
+    "Actual":49.9,
+    "Forecast":49.5,
+    "Previous":49.5
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"03:50:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"French Final Services PMI",
+    "Actual":49.5,
+    "Forecast":48.1,
+    "Previous":48.1
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"03:55:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German Final Services PMI",
+    "Actual":49.2,
+    "Forecast":49.0,
+    "Previous":49.0
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"04:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Final Services PMI",
+    "Actual":49.8,
+    "Forecast":49.1,
+    "Previous":49.1
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"04:30:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"M4 Money Supply m\/m",
+    "Actual":-1.6,
+    "Forecast":0.2,
+    "Previous":0.1
+  },
+  {
+    "Week":"2023-01-04",
     "Date":"2023-01-04",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Mortgage Approvals",
+    "Actual":46.0,
+    "Forecast":54.0,
+    "Previous":58.0
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Net Lending to Individuals m\/m",
+    "Actual":5.9,
+    "Forecast":4.5,
+    "Previous":4.3
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"10:00:00",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"ISM Manufacturing PMI",
+    "Actual":48.4,
+    "Forecast":48.5,
+    "Previous":49.0
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"JOLTS Job Openings",
+    "Actual":10.46,
+    "Forecast":10.04,
+    "Previous":10.51
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"ISM Manufacturing Prices",
+    "Actual":39.4,
+    "Forecast":42.9,
+    "Previous":43.0
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"All Day",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Wards Total Vehicle Sales",
+    "Actual":13.3,
+    "Forecast":13.4,
+    "Previous":14.1
+  },
+  {
+    "Week":"2023-01-04",
+    "Date":"2023-01-04",
+    "Time":"14:00:00",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"FOMC Meeting Minutes",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-04",
     "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Time":"16:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"API Weekly Statistical Bulletin",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-04",
     "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"18:50:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Monetary Base y\/y",
+    "Actual":-6.1,
+    "Forecast":-6.1,
+    "Previous":-6.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-04",
     "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"20:45:00",
+    "Currency":"CNY",
+    "Impact":"Low",
+    "Event":"Caixin Services PMI",
+    "Actual":48.0,
+    "Forecast":46.8,
+    "Previous":46.7
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-04",
     "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
+    "Time":"22:35:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"10-y Bond Auction",
+    "Actual":0.5,
     "Forecast":null,
-    "Previous":null
+    "Previous":0.25
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"00:00:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Consumer Confidence",
+    "Actual":30.3,
+    "Forecast":28.2,
+    "Previous":28.6
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"02:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German Trade Balance",
+    "Actual":10.8,
+    "Forecast":7.5,
+    "Previous":6.8
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"04:30:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Final Services PMI",
+    "Actual":49.9,
+    "Forecast":50.0,
+    "Previous":50.0
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"04:58:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"French 10-y Bond Auction",
+    "Actual":2.77,
     "Forecast":null,
-    "Previous":null
+    "Previous":2.19
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"05:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"PPI m\/m",
+    "Actual":-0.9,
+    "Forecast":-0.8,
+    "Previous":-3.0
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-04",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Italian Prelim CPI m\/m",
+    "Actual":0.3,
+    "Forecast":0.2,
+    "Previous":0.5
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"07:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Challenger Job Cuts y\/y",
+    "Actual":129.1,
+    "Forecast":null,
+    "Previous":416.5
+  },
+  {
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"08:15:00",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"ADP Non-Farm Employment Change",
+    "Actual":235.0,
+    "Forecast":152.0,
+    "Previous":182.0
+  },
+  {
+    "Week":"2023-01-05",
+    "Date":"2023-01-05",
+    "Time":"08:30:00",
+    "Currency":"CAD",
+    "Impact":"Low",
+    "Event":"Trade Balance",
+    "Actual":0.0,
+    "Forecast":1.3,
+    "Previous":0.1
+  },
+  {
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"Medium",
+    "Event":"Unemployment Claims",
+    "Actual":204.0,
+    "Forecast":230.0,
+    "Previous":223.0
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Trade Balance",
+    "Actual":-61.5,
+    "Forecast":-64.2,
+    "Previous":-77.8
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"09:45:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Final Services PMI",
+    "Actual":44.7,
+    "Forecast":44.4,
+    "Previous":44.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"10:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Natural Gas Storage",
+    "Actual":-221.0,
+    "Forecast":-230.0,
+    "Previous":-213.0
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"11:00:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Crude Oil Inventories",
+    "Actual":1.7,
+    "Forecast":1.5,
+    "Previous":0.7
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-05",
     "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"18:30:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Average Cash Earnings y\/y",
+    "Actual":0.5,
+    "Forecast":1.7,
+    "Previous":1.4
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"02:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German Factory Orders m\/m",
+    "Actual":-5.3,
+    "Forecast":-0.5,
+    "Previous":0.6
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-05",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German Retail Sales m\/m",
+    "Actual":1.1,
+    "Forecast":1.5,
+    "Previous":-2.8
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Halifax HPI m\/m",
+    "Actual":-1.5,
+    "Forecast":-0.6,
+    "Previous":-2.4
+  },
+  {
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"All Day",
+    "Currency":"EUR",
     "Impact":null,
-    "Event":"",
+    "Event":"Italian Bank Holiday",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"02:36:00",
+    "Currency":"CHF",
+    "Impact":"Low",
+    "Event":"Retail Sales y\/y",
+    "Actual":-1.3,
+    "Forecast":-1.0,
+    "Previous":-2.6
+  },
+  {
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"02:45:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"French Consumer Spending m\/m",
+    "Actual":0.5,
+    "Forecast":1.0,
+    "Previous":-2.7
+  },
+  {
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"04:30:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Construction PMI",
+    "Actual":48.8,
+    "Forecast":50.6,
+    "Previous":50.4
+  },
+  {
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"05:00:00",
+    "Currency":"EUR",
+    "Impact":"Medium",
+    "Event":"Core CPI Flash Estimate y\/y",
+    "Actual":5.2,
+    "Forecast":5.1,
+    "Previous":5.0
+  },
+  {
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"EUR",
+    "Impact":"Medium",
+    "Event":"CPI Flash Estimate y\/y",
+    "Actual":9.2,
+    "Forecast":9.6,
+    "Previous":10.1
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Retail Sales m\/m",
+    "Actual":0.8,
+    "Forecast":0.5,
+    "Previous":-1.5
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"08:30:00",
+    "Currency":"CAD",
+    "Impact":"High",
+    "Event":"Employment Change",
+    "Actual":104.0,
+    "Forecast":5.5,
+    "Previous":10.1
+  },
+  {
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"CAD",
+    "Impact":"High",
+    "Event":"Unemployment Rate",
+    "Actual":5.0,
+    "Forecast":5.2,
+    "Previous":5.1
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"Average Hourly Earnings m\/m",
+    "Actual":0.3,
+    "Forecast":0.4,
+    "Previous":0.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"Non-Farm Employment Change",
+    "Actual":223.0,
+    "Forecast":200.0,
+    "Previous":256.0
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"Unemployment Rate",
+    "Actual":3.5,
+    "Forecast":3.7,
+    "Previous":3.7
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
+    "Date":"2023-01-06",
+    "Time":"10:00:00",
+    "Currency":"CAD",
+    "Impact":"Medium",
+    "Event":"Ivey PMI",
+    "Actual":33.4,
+    "Forecast":51.0,
+    "Previous":51.4
+  },
+  {
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"ISM Services PMI",
+    "Actual":49.6,
+    "Forecast":55.0,
+    "Previous":56.5
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Factory Orders m\/m",
+    "Actual":-1.8,
+    "Forecast":-0.9,
+    "Previous":0.4
   },
   {
-    "Week":"2023-01-01",
+    "Week":"2023-01-06",
     "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Time":"11:15:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"FOMC Member Cook Speaks",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
-    "Date":"2023-01-06",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-01",
+    "Week":"2023-01-07",
     "Date":"2023-01-07",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Time":"11:15:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"MPC Member Mann Speaks",
     "Actual":null,
     "Forecast":null,
     "Previous":null
@@ -946,7 +946,7 @@
     "Previous":-5.6
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"01:45:00",
     "Currency":"CHF",
@@ -957,7 +957,7 @@
     "Previous":2.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"02:00:00",
     "Currency":"EUR",
@@ -968,7 +968,7 @@
     "Previous":-0.4
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"02:45:00",
     "Currency":"EUR",
@@ -979,7 +979,7 @@
     "Previous":-11.6
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"03:00:00",
     "Currency":"CHF",
@@ -990,7 +990,7 @@
     "Previous":790.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"04:00:00",
     "Currency":"EUR",
@@ -1001,7 +1001,7 @@
     "Previous":7.9
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"04:30:00",
     "Currency":"EUR",
@@ -1012,7 +1012,7 @@
     "Previous":-21.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"05:00:00",
     "Currency":"EUR",
@@ -1023,7 +1023,7 @@
     "Previous":6.5
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"08:30:00",
     "Currency":"CAD",
@@ -1034,7 +1034,7 @@
     "Previous":-5.3
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"10:30:00",
     "Currency":"GBP",
@@ -1045,7 +1045,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"15:00:00",
     "Currency":"USD",
@@ -1056,7 +1056,7 @@
     "Previous":29.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"18:30:00",
     "Currency":"JPY",
@@ -1067,7 +1067,7 @@
     "Previous":1.2
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"",
     "Currency":"JPY",
@@ -1078,7 +1078,7 @@
     "Previous":3.6
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-09",
     "Date":"2023-01-09",
     "Time":"19:01:00",
     "Currency":"GBP",
@@ -1089,7 +1089,7 @@
     "Previous":4.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"02:45:00",
     "Currency":"EUR",
@@ -1100,7 +1100,7 @@
     "Previous":-2.5
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"04:05:00",
     "Currency":"CNY",
@@ -1111,7 +1111,7 @@
     "Previous":12.4
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"",
     "Currency":"CNY",
@@ -1122,7 +1122,7 @@
     "Previous":1210.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"05:02:00",
     "Currency":"GBP",
@@ -1133,7 +1133,7 @@
     "Previous":3.33
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"05:10:00",
     "Currency":"CAD",
@@ -1144,7 +1144,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"",
     "Currency":"JPY",
@@ -1155,7 +1155,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"05:59:00",
     "Currency":"USD",
@@ -1166,7 +1166,7 @@
     "Previous":91.9
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"09:00:00",
     "Currency":"USD",
@@ -1177,7 +1177,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"10:00:00",
     "Currency":"USD",
@@ -1188,7 +1188,7 @@
     "Previous":1.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"",
     "Currency":"USD",
@@ -1199,7 +1199,7 @@
     "Previous":42.9
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"16:30:00",
     "Currency":"USD",
@@ -1210,7 +1210,7 @@
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"19:00:00",
     "Currency":"NZD",
@@ -1221,7 +1221,7 @@
     "Previous":-4.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"19:30:00",
     "Currency":"AUD",
@@ -1232,7 +1232,7 @@
     "Previous":6.9
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"",
     "Currency":"AUD",
@@ -1243,7 +1243,7 @@
     "Previous":0.3
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-10",
     "Date":"2023-01-10",
     "Time":"22:35:00",
     "Currency":"JPY",
@@ -1254,432 +1254,432 @@
     "Previous":1.48
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"00:00:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Leading Indicators",
+    "Actual":97.6,
+    "Forecast":97.5,
+    "Previous":98.6
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"03:57:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Italian Retail Sales m\/m",
+    "Actual":0.8,
+    "Forecast":-0.3,
+    "Previous":-0.3
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"05:33:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"German 10-y Bond Auction",
+    "Actual":2.25,
+    "Forecast":null,
+    "Previous":1.95
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"10:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Crude Oil Inventories",
+    "Actual":19.0,
+    "Forecast":-2.0,
+    "Previous":1.7
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"13:01:00",
+    "Currency":"USD",
+    "Impact":"Medium",
+    "Event":"10-y Bond Auction",
+    "Actual":3.58,
+    "Forecast":null,
+    "Previous":3.63
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"16:45:00",
+    "Currency":"NZD",
+    "Impact":"Low",
+    "Event":"Building Consents m\/m",
+    "Actual":7.0,
+    "Forecast":null,
+    "Previous":-10.7
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"18:50:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Bank Lending y\/y",
+    "Actual":2.7,
+    "Forecast":2.8,
+    "Previous":2.7
+  },
+  {
+    "Week":"2023-01-11",
     "Date":"2023-01-11",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Current Account",
+    "Actual":1.92,
+    "Forecast":0.65,
+    "Previous":-0.61
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"19:30:00",
+    "Currency":"AUD",
+    "Impact":"Low",
+    "Event":"Goods Trade Balance",
+    "Actual":13.2,
+    "Forecast":11.35,
+    "Previous":12.74
+  },
+  {
+    "Week":"2023-01-11",
+    "Date":"2023-01-11",
+    "Time":"20:30:00",
+    "Currency":"CNY",
+    "Impact":"Low",
+    "Event":"CPI y\/y",
+    "Actual":1.8,
+    "Forecast":1.8,
+    "Previous":1.6
+  },
+  {
+    "Week":"2023-01-11",
     "Date":"2023-01-11",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Currency":"CNY",
+    "Impact":"Low",
+    "Event":"PPI y\/y",
+    "Actual":-0.7,
+    "Forecast":-0.1,
+    "Previous":-1.3
+  },
+  {
+    "Week":"2023-01-12",
+    "Date":"2023-01-12",
+    "Time":"00:00:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"Economy Watchers Sentiment",
+    "Actual":47.9,
+    "Forecast":47.8,
+    "Previous":48.1
+  },
+  {
+    "Week":"2023-01-12",
+    "Date":"2023-01-12",
+    "Time":"04:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"ECB Economic Bulletin",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Week":"2023-01-12",
+    "Date":"2023-01-12",
+    "Time":"07:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"FOMC Member Harker Speaks",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-12",
+    "Date":"2023-01-12",
+    "Time":"08:30:00",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"Core CPI m\/m",
+    "Actual":0.3,
+    "Forecast":0.3,
+    "Previous":0.2
   },
   {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-11",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"CPI m\/m",
+    "Actual":-0.1,
+    "Forecast":-0.1,
+    "Previous":0.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"CPI y\/y",
+    "Actual":6.5,
+    "Forecast":6.5,
+    "Previous":7.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"USD",
+    "Impact":"Medium",
+    "Event":"Unemployment Claims",
+    "Actual":205.0,
+    "Forecast":216.0,
+    "Previous":206.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"10:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Natural Gas Storage",
+    "Actual":11.0,
+    "Forecast":-15.0,
+    "Previous":-221.0
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
+    "Time":"12:00:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"MPC Member Mann Speaks",
     "Actual":null,
     "Forecast":null,
     "Previous":null
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
+    "Time":"13:01:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"30-y Bond Auction",
+    "Actual":3.59,
     "Forecast":null,
-    "Previous":null
+    "Previous":3.51
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"14:00:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Federal Budget Balance",
+    "Actual":-85.0,
+    "Forecast":-59.5,
+    "Previous":-248.5
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"18:50:00",
+    "Currency":"JPY",
+    "Impact":"Low",
+    "Event":"M2 Money Stock y\/y",
+    "Actual":2.9,
+    "Forecast":3.2,
+    "Previous":3.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"22:18:00",
+    "Currency":"CNY",
+    "Impact":"Low",
+    "Event":"USD-Denominated Trade Balance",
+    "Actual":78.0,
+    "Forecast":77.9,
+    "Previous":69.8
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-12",
     "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"22:22:00",
+    "Currency":"CNY",
+    "Impact":"Low",
+    "Event":"Trade Balance",
+    "Actual":550.0,
+    "Forecast":533.0,
+    "Previous":494.0
   },
   {
-    "Week":"2023-01-08",
-    "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Week":"2023-01-13",
+    "Date":"2023-01-13",
+    "Time":"02:00:00",
+    "Currency":"GBP",
+    "Impact":"High",
+    "Event":"GDP m\/m",
+    "Actual":0.1,
+    "Forecast":-0.2,
+    "Previous":0.5
   },
   {
-    "Week":"2023-01-08",
-    "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-12",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Construction Output m\/m",
+    "Actual":0.0,
+    "Forecast":-0.3,
+    "Previous":0.4
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Goods Trade Balance",
+    "Actual":-15.6,
+    "Forecast":-14.9,
+    "Previous":-12.3
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Index of Services 3m\/3m",
+    "Actual":-0.1,
+    "Forecast":-0.3,
+    "Previous":-0.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Industrial Production m\/m",
+    "Actual":-0.2,
+    "Forecast":-0.2,
+    "Previous":-0.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"Manufacturing Production m\/m",
+    "Actual":-0.5,
+    "Forecast":-0.2,
+    "Previous":0.7
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"02:45:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"French Final CPI m\/m",
+    "Actual":-0.1,
+    "Forecast":-0.1,
+    "Previous":-0.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"04:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Italian Industrial Production m\/m",
+    "Actual":-0.3,
+    "Forecast":0.4,
+    "Previous":-1.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"05:00:00",
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Industrial Production m\/m",
+    "Actual":1.0,
+    "Forecast":0.6,
+    "Previous":-1.9
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Currency":"EUR",
+    "Impact":"Low",
+    "Event":"Trade Balance",
+    "Actual":-15.2,
+    "Forecast":-21.1,
+    "Previous":-28.1
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
+    "Time":"07:01:00",
+    "Currency":"GBP",
+    "Impact":"Low",
+    "Event":"NIESR GDP Estimate",
+    "Actual":0.1,
     "Forecast":null,
-    "Previous":null
+    "Previous":-0.3
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"08:30:00",
+    "Currency":"USD",
+    "Impact":"Low",
+    "Event":"Import Prices m\/m",
+    "Actual":0.4,
+    "Forecast":-0.9,
+    "Previous":-0.7
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Time":"10:00:00",
+    "Currency":"USD",
+    "Impact":"High",
+    "Event":"Prelim UoM Consumer Sentiment",
+    "Actual":64.6,
+    "Forecast":60.8,
+    "Previous":59.7
   },
   {
-    "Week":"2023-01-08",
+    "Week":"2023-01-13",
     "Date":"2023-01-13",
     "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
+    "Currency":"USD",
+    "Impact":"Medium",
+    "Event":"Prelim UoM Inflation Expectations",
+    "Actual":4.0,
     "Forecast":null,
-    "Previous":null
-  },
-  {
-    "Week":"2023-01-08",
-    "Date":"2023-01-13",
-    "Time":"",
-    "Currency":"",
-    "Impact":null,
-    "Event":"",
-    "Actual":null,
-    "Forecast":null,
-    "Previous":null
+    "Previous":4.4
   }
 ]

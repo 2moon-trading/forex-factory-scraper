@@ -1,3 +1,4 @@
+import copy
 import datetime as dt
 from datetime import datetime
 import re
@@ -24,7 +25,7 @@ COLUMNS = [
 ]
 
 
-def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
+def parse_calendar_day(driver, week: dt.datetime, the_date: dt.datetime) -> pd.DataFrame:
     """
     Scrape data for a single day (the_date) and return a DataFrame with columns:
     -DateTime, Currency, Impact, Event, Actual, Forecast, Previous, Detail
@@ -34,7 +35,7 @@ def parse_calendar_week(driver, the_date: dt.datetime) -> pd.DataFrame:
     already exists (using existing_df) with a non-empty "Detail" field.
     """
     date_str = the_date.strftime('%b%d.%Y').lower()
-    url = f"https://www.forexfactory.com/calendar?week={date_str}"
+    url = f"https://www.forexfactory.com/calendar?day={date_str}"
     logger.info(f"Scraping URL: {url}")
     driver.get(url)
 
@@ -201,8 +202,17 @@ def scrape_week(driver, the_date: datetime) -> pd.DataFrame:
     """
     Re-scrape a single day, using existing_df to check for already-saved details.
     """
-    df_week_new = parse_calendar_week(driver, the_date)
-    return df_week_new
+    week_df = pd.DataFrame(columns=COLUMNS)
+    week = copy.deepcopy(the_date)
+    day = copy.deepcopy(the_date)
+    _cycles = 0
+    while _cycles < 7:
+        logger.info(f"Scraping day {day.strftime('%Y-%m-%d')}...")
+        df_day_new = parse_calendar_day(driver, week, day)
+        week_df = pd.concat([week_df, df_day_new], ignore_index=True)
+        day += dt.timedelta(days=1)
+        _cycles += 1
+    return week_df
 
 
 def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
