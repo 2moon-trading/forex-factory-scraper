@@ -236,28 +236,40 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
 
-    # Paso 1: Cargar contenido anterior si existe
     json_filename = "noticias.json"
+
+    # Paso 1: cargar noticias existentes
     if os.path.exists(json_filename):
         with open(json_filename, "r", encoding="utf-8") as f:
             noticias_previas = json.load(f)
     else:
         noticias_previas = []
 
-    # Paso 2: Identificar semanas pendientes
+    # Paso 2: función para limpiar NaN de forma profunda
+    def clean_nan_deep(data):
+        if isinstance(data, list):
+            return [clean_nan_deep(item) for item in data]
+        elif isinstance(data, dict):
+            return {k: clean_nan_deep(v) for k, v in data.items()}
+        elif pd.isna(data):
+            return None
+        else:
+            return data
+
+    # Paso 3: identificar semanas nuevas
     semanas_nuevas = []
     current_week = from_date
 
     for _ in range(cycles):
         week_str = current_week.strftime('%Y_%m_%d')
-        marker_file = f".cache/noticias_{week_str}.ok"
+        marker_file = f"noticias_{week_str}.ok"
 
         if not os.path.exists(marker_file):
             semanas_nuevas.append(current_week)
 
         current_week += dt.timedelta(days=7)
 
-    # Paso 3: Scrapear y acumular solo si hay nuevas semanas
+    # Paso 4: scrapear semanas nuevas
     if semanas_nuevas:
         for week in semanas_nuevas:
             week_str = week.strftime('%Y_%m_%d')
@@ -266,16 +278,18 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
             week_df = scrape_week(driver, week)
             records = week_df.to_dict(orient='records')
 
-            noticias_previas.extend(records)
+            # ✅ Limpieza profunda de NaN
+            clean_records = clean_nan_deep(records)
 
-            # Crear marcador para evitar reprocesar esta semana
-            with open(f".cache/noticias_{week_str}.ok", "w") as marker:
+            noticias_previas.extend(clean_records)
+
+            with open(f"noticias_{week_str}.ok", "w") as marker:
                 marker.write("")
 
-        # Paso 4: Guardar todo el contenido acumulado
+        # Paso 5: guardar todo el JSON limpio
         with open(json_filename, "w", encoding="utf-8") as f:
             json.dump(noticias_previas, f, indent=2, ensure_ascii=False)
 
-        logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas a {json_filename}.")
+        logger.info(f"{len(semanas_nuevas)} semanas nuevas agregadas.")
     else:
         logger.info("No hay semanas nuevas por scrapear. El archivo no fue modificado.")
