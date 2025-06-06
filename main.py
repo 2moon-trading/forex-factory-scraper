@@ -6,7 +6,7 @@ from src.incremental import scrape_incremental
 
 
 start = '2020-01-05'
-cycles = 282
+cycles = 1
 timezone = 'Asia/Tehran'
 
 

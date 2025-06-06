@@ -1,6 +1,7 @@
 import copy
 import datetime as dt
 from datetime import datetime
+import os
 import re
 import logging
 import pandas as pd # type: ignore
@@ -234,34 +235,34 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
     logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
 
-    _cycles = 0
+    current_week = from_date
 
-    df = pd.DataFrame(columns=COLUMNS)
+    with open("noticias.json", "w", encoding="utf-8") as f:
+        f.write("[")  # Abrir la lista JSON
 
-    try:
-        current_week = from_date
-        while _cycles < cycles:
-            logger.info(f"Scraping week {current_week.strftime('%Y-%m-%d')}...")
-            df = pd.concat([df, scrape_week(driver, current_week)], ignore_index=True)
+        for i in range(cycles):
+            week_str = current_week.strftime('%Y_%m_%d')
+            marker_file = f"noticias_{week_str}.ok"
+
+            if os.path.exists(marker_file):
+                logger.info(f"Ya existe {marker_file}, saltando semana {week_str}...")
+            else:
+                logger.info(f"Scraping week {current_week.strftime('%Y-%m-%d')}...")
+                week_df = scrape_week(driver, current_week)
+
+                # Convertir a JSON sin los corchetes externos
+                json_str = week_df.to_json(orient='records')[1:-1]
+
+                # Si no es la primera semana que se escribe, agregar coma
+                if f.tell() > 1:
+                    f.write(",")
+
+                f.write(json_str)
+
+                # Crear archivo marcador
+                with open(marker_file, "w") as marker:
+                    marker.write("")
+
             current_week += dt.timedelta(days=7)
-            _cycles += 1
 
-        json_str = df.to_json(orient='records', indent=2)
-        with open("noticias.json", "w", encoding="utf-8") as f:
-            f.write(json_str)
-
-    finally:
-        if driver:
-            try:
-                driver.quit()
-                logger.info("Chrome WebDriver closed successfully.")
-            except OSError as ose:
-                # Ignore specific OSError during final cleanup (e.g., WinError 6)
-                logger.debug(f"Ignored OSError during WebDriver quit: {ose}")
-            except Exception as e:
-                logger.error(f"Error closing WebDriver: {e}")
-            finally:
-                driver = None
-
-    # Final save (if needed)
-    logger.info(f"Done. Total new/updated rows: {len(df)}")
+        f.write("]")  # Cerrar la lista JSON
