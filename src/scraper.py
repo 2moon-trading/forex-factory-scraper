@@ -198,15 +198,15 @@ def parse_calendar_day(driver, week: dt.datetime, the_date: dt.datetime) -> pd.D
             impact_text = "Unknown"
 
         data_list.append({
-            "Week": week.strftime('%Y-%m-%d'),
-            "Date": date_text ,
-            "Time": time_text,
-            "Currency": currency_text,
-            "Impact": impact_text,
-            "Event": event_text,
-            "Actual": actual_text,
-            "Forecast": forecast_text,
-            "Previous": previous_text,
+            "week": week.strftime('%Y-%m-%d'),
+            "date": date_text ,
+            "time": time_text,
+            "currency": currency_text,
+            "impact": impact_text,
+            "event": event_text,
+            "actual": actual_text,
+            "forecast": forecast_text,
+            "previous": previous_text,
         })
 
     return pd.DataFrame(data_list)
