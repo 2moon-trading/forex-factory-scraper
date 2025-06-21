@@ -23,7 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 COLUMNS = [
-    "Week", "Date", "Time", "Currency", "Impact", "Event", "Actual", "Forecast", "Previous"
+    "week", "date", "time", "currency", "impact", "event", "actual", "forecast", "previous"
 ]
 
 
@@ -271,6 +271,8 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
 
             week_df = scrape_week(driver, week)
 
+            print(week_df)
+
             # Limpieza profunda de NaN
             week_df = week_df.where(pd.notnull(week_df), None)
 
@@ -281,10 +283,10 @@ def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
                 marker.write("")
 
         # Paso 4: eliminar duplicados
-        df_total = df_total.drop_duplicates(subset=["Date", "Time", "Currency", "Event"])
+        df_total = df_total.drop_duplicates(subset=["date", "time", "currency", "event"])
 
         # Paso 5: forzar que 'Date' sea string en formato YYYY-MM-DD
-        df_total['Date'] = pd.to_datetime(df_total['Date']).dt.strftime('%Y-%m-%d')
+        df_total['date'] = pd.to_datetime(df_total['date']).dt.strftime('%Y-%m-%d')
 
         # Guardar JSON limpio
         df_total.to_json(json_filename, orient="records", indent=2, force_ascii=False)
