@@ -147,7 +147,7 @@ def parse_calendar_day(driver, week: dt.datetime, the_date: dt.datetime) -> pd.D
         date_text = date_text.replace("\n", " ").replace("\\", "").strip()
 
         if date_text == '':
-            date_text = next(data['Date'] for data in reversed(data_list) if data['Date'] != '')
+            date_text = next(data['date'] for data in reversed(data_list) if data['date'] != '')
 
         year = _the_date.split("-")[0]
         if year not in date_text:

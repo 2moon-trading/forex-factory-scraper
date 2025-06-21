@@ -5,8 +5,8 @@ from dateutil.tz import gettz # type: ignore
 from src.incremental import scrape_incremental
 
 
-start = '2020-01-05'
-cycles = 282
+start = '2025-06-01'
+cycles = 3
 timezone = 'Asia/Tehran'
 
 
