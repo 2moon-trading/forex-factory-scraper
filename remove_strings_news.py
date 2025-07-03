@@ -1,5 +1,4 @@
 import json
-from utils import JsonUtils
 
 # El actual, previus y forecast deben ser floats
 def _format_float(value):
@@ -53,7 +52,8 @@ def _format_day(value):
         print(f"Error converting date '{value}' to day: {e}")
         exit
 
-news_old = JsonUtils('EUR_USD').get_data('news')
+with open(f'noticias.json', 'r', encoding='utf-8') as file:
+    news_old = json.load(file)
 news_new = []
 
 last_time = None
@@ -87,6 +87,6 @@ for new in news_old:
 
     news_new.append(new)
 
-with open("configs/news_new.json", "w", encoding="utf-8") as file:
+with open("news_new.json", "w", encoding="utf-8") as file:
     json.dump(news_new, file, indent=4, ensure_ascii=False)
 
