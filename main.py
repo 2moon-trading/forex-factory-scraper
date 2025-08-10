@@ -9,6 +9,7 @@ start = '2025-08-10'
 cycles = 1
 timezone = 'Asia/Tehran'
 
+#2025-08-10 13:23:58 [INFO] undetected_chromedriver.patcher: patching driver executable /Users/santiagogaleanograndeth/Library/Application Support/undetected_chromedriver/undetected_chromedriver
 
 logging.basicConfig(
     level=logging.INFO,
