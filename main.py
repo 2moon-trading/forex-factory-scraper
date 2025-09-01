@@ -5,8 +5,8 @@ from dateutil.tz import gettz # type: ignore
 from src.incremental import scrape_incremental
 
 
-start = '2025-08-10'
-cycles = 1
+start = '2025-08-17'
+cycles = 2
 timezone = 'Asia/Tehran'
 
 #2025-08-10 13:23:58 [INFO] undetected_chromedriver.patcher: patching driver executable /Users/santiagogaleanograndeth/Library/Application Support/undetected_chromedriver/undetected_chromedriver
