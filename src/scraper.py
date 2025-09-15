@@ -231,7 +231,8 @@ def scrape_week(driver, the_date: datetime) -> pd.DataFrame:
 
 
 def scrape_range_pandas(from_date: datetime, cycles: int, tzname="Asia/Tehran"):
-    driver = uc.Chrome(version_main=138)
+    #driver = uc.Chrome(version_main=138)
+    driver = uc.Chrome()
     driver.set_window_size(1400, 1000)
 
     logger.info(f"Scraping {from_date.date()} for {cycles} cycles.")
